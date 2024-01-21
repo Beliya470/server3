@@ -19,9 +19,7 @@ from wtforms.validators import DataRequired, Email, EqualTo, ValidationError
 # from jwt import encode as jwt_encode
 # from jwt import encode as jwt_encode, decode as jwt_decode, ExpiredSignatureError
 import jwt
-
-from jwt import ExpiredSignatureError
-
+from jwt.exceptions import ExpiredSignatureError
 
 
 from datetime import datetime, timedelta
